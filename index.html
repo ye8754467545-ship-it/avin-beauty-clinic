@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Avin Beauty Clinic | Portfolio Sample">کلینیک زیبایی آوین | نمونه‌کار طراحی</title>
+<meta name="description" content="نمونه‌کار طراحی وب‌سایت برای یک کلینیک زیبایی ساختگی؛ فارسی و انگلیسی، با حالت روز و شب و اشکال سه‌بعدی.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js');try{var s=localStorage;if(s.getItem('avin-theme')==='night')document.documentElement.dataset.theme='night';if(s.getItem('avin-lang')==='en'){document.documentElement.lang='en';document.documentElement.dir='ltr'}}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main" data-en="Skip to content">رفتن به محتوا</a>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<header class="site-header" id="top">
+  <a class="logo" href="#top" aria-label="آوین" data-en-aria-label="Avin">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="16" cy="16" rx="6" ry="14"/><ellipse cx="16" cy="16" rx="6" ry="14" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="6" ry="14" transform="rotate(120 16 16)"/></g></svg>
+    <span data-en="Avin">آوین</span>
+  </a>
+  <nav class="main-nav" id="main-nav" aria-label="منوی اصلی" data-en-aria-label="Main menu">
+    <a href="#services" data-en="Services">خدمات</a>
+    <a href="#routine" data-en="Day &amp; Night">برنامه شب و روز</a>
+    <a href="#process" data-en="Process">مراحل درمان</a>
+    <a href="#spaces" data-en="Clinic">فضای کلینیک</a>
+    <a href="#team" data-en="Doctors">پزشکان</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="تغییر حالت روز و شب" data-en-aria-label="Switch day and night mode">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.3 8.3 0 1 0 10.2 10.2Z"/></svg>
+    </button>
+    <button class="text-btn" id="lang-btn" type="button" aria-label="Switch to English" data-en-aria-label="تغییر زبان به فارسی" data-en="فا">EN</button>
+    <a class="btn btn-dark" href="#book" data-en="Book a visit">رزرو نوبت</a>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="منو" data-en-aria-label="Menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero">
+    <div class="hero-stage" id="hero-stage" aria-hidden="true">
+      <video id="hero-video" src="assets/video/hero.mp4" poster="assets/img/hero.webp" autoplay muted loop playsinline preload="auto"></video>
+      <div class="scan" data-point="0"><span data-en="Texture">بافت پوست</span></div>
+      <div class="scan" data-point="1"><span data-en="Hydration">آبرسانی</span></div>
+      <div class="scan" data-point="2"><span data-en="Radiance">شفافیت</span></div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="trust">
+        <span class="trust-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><span data-en="Trusted by">همراهی</span> <b id="trust-count" data-count="10000">۱۰٬۰۰۰</b> <span data-en="clients">مراجع</span></span>
+      </p>
+      <h1>
+        <span class="line" data-en="Discover">زیبایی</span>
+        <span class="line muted" data-en="your skin's">پوستت را</span>
+        <span class="line" data-en="natural glow">از نو کشف کن</span>
+      </h1>
+      <p class="lead" data-en="We read your skin closely and build a care plan that truly suits it.">پوستت را با دقت بررسی می‌کنیم و برنامه‌ای می‌چینیم که واقعاً مناسب خودش باشد.</p>
+      <a class="btn btn-soft" href="#book" data-en="Start your skin analysis">شروع تحلیل پوست</a>
+    </div>
+
+    <ul class="hero-stats">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3.6 4.2 6 7.300 6 10.300a6 6 0 0 1-12 0C6 10.300 8.400 7.200 12 3Z"/></svg>
+        <div><b data-stat="95" data-suffix="%">۹۵٪</b><span data-en="client satisfaction">رضایت مراجعان</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M12 7v5l3.500 2"/></svg>
+        <div><b data-stat="30" data-prefix="+">۳۰+</b><span data-en="skin indicators checked">شاخص بررسی پوست</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.500" width="16" height="14.500" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+        <div><b data-stat="7" data-unit-fa=" روزه" data-unit-en="-day">۷ روزه</b><span data-en="personal routine">برنامه اختصاصی</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="care" id="care">
+    <div class="care-media">
+      <div class="care-photo">
+        <img src="assets/img/foam.webp" alt="زنی که فوم پاک‌کننده را روی گونه‌اش می‌زند" data-en-alt="A woman applying foam cleanser to her cheek" loading="lazy" width="1100" height="1473">
+        <span class="hotspot" style="--x:50%;--y:17%" data-en="Better sleep">خواب کافی</span>
+        <span class="hotspot" style="--x:67%;--y:42%" data-en="Hydration">آبرسانی</span>
+        <span class="hotspot" style="--x:50%;--y:70%" data-en="Less stress">استرس کمتر</span>
+      </div>
+    </div>
+    <div class="care-panels">
+      <article class="panel">
+        <h2 data-en="Smart care">مراقبت هوشمند</h2>
+        <p data-en="Skin changes with sleep, season and stress. We look at the whole picture, then choose a treatment that fits this moment of your skin.">پوست با خواب، فصل و استرس تغییر می‌کند. ما همه این‌ها را با هم می‌بینیم و درمانی را انتخاب می‌کنیم که با وضعیت امروز پوستت هماهنگ باشد.</p>
+      </article>
+      <article class="panel">
+        <h2 data-en="Mindful beauty">زیبایی آگاهانه</h2>
+        <p data-en="No rushed decisions and no treatment you don't need. You'll know what each step does and why we suggest it.">نه تصمیم عجولانه، نه درمان غیرضروری. می‌دانی هر مرحله چه کاری می‌کند و چرا پیشنهادش می‌دهیم.</p>
+      </article>
+      <article class="panel">
+        <h2 data-en="Natural results">نتیجه طبیعی</h2>
+        <p data-en="The goal is healthy, rested skin that still looks like you, only with more glow.">هدف ما پوستی سالم و شاداب است که هنوز شبیه خود توست، فقط کمی درخشان‌تر.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-sticky">
+      <span class="tag" style="--tx:18%;--ty:16%;--c:#b8a4ef" data-en="Beautiful">زیبا</span>
+      <span class="tag" style="--tx:5%;--ty:68%;--c:#6fd38f" data-en="Confident">با اعتمادبه‌نفس</span>
+      <span class="tag" style="--tx:80%;--ty:14%;--c:#f06d84" data-en="Healthy">سالم</span>
+      <span class="tag" style="--tx:84%;--ty:78%;--c:#f5a35c" data-en="Happy">شاد</span>
+      <span class="tag" style="--tx:30%;--ty:84%;--c:#5cc7d6" data-en="Glowing">درخشان</span>
+      <p class="story-text" id="story-text" data-en="Avin helps you understand your skin and care for it better than ever. Honest advice and proven treatments, for your healthiest, happiest skin.">آوین کمک می‌کند پوستت را بهتر بشناسی و بهتر از همیشه از آن مراقبت کنی. مشاوره صادقانه و درمان‌های علمی، برای سالم‌ترین و شاداب‌ترین پوست تو.</p>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-en="Services">خدمات</p>
+      <h2 data-en="Care for every skin">برای هر پوست، مراقبتی مناسب</h2>
+    </header>
+    <div class="services-grid">
+      <article class="service reveal">
+        <div class="service-img"><img src="assets/img/service-1.webp" alt="ماسک صورت با قلم توسط متخصص" data-en-alt="A specialist applying a facial mask with a brush" loading="lazy" width="1100" height="1473"></div>
+        <h3 data-en="Hydrating facial">فیشیال آبرسان</h3>
+        <p data-en="Deep cleansing and moisture for tired skin.">پاک‌سازی عمیق و رطوبت‌رسانی برای پوست خسته.</p>
+      </article>
+      <article class="service reveal">
+        <div class="service-img"><img src="assets/img/service-2.webp" alt="جلسه جوان‌سازی پوست با دستگاه لیزر" data-en-alt="A laser skin rejuvenation session" loading="lazy" width="1100" height="1473"></div>
+        <h3 data-en="Laser rejuvenation">جوان‌سازی با لیزر</h3>
+        <p data-en="More even tone and refined skin texture.">یکدست‌تر شدن رنگ و بهبود بافت پوست.</p>
+      </article>
+      <article class="service reveal">
+        <div class="service-img"><img src="assets/img/service-3.webp" alt="پزشک پوست در حال معاینه صورت" data-en-alt="A dermatologist examining facial skin" loading="lazy" width="1100" height="1473"></div>
+        <h3 data-en="Skin analysis">تحلیل تخصصی پوست</h3>
+        <p data-en="A close examination and a clear plan.">معاینه دقیق و برنامه درمانی روشن.</p>
+      </article>
+      <article class="service reveal">
+        <div class="service-img"><img src="assets/img/service-4.webp" alt="محصولات مراقبت پوست روی سنگ مرمر" data-en-alt="Skincare products on a marble counter" loading="lazy" width="1100" height="1473"></div>
+        <h3 data-en="Home care">مراقبت در خانه</h3>
+        <p data-en="Product choices that suit your skin.">انتخاب محصولاتی که به پوستت می‌آیند.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section routine" id="routine">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-en="Day &amp; night routine">برنامه شب و روز</p>
+      <h2 data-en="Your skin needs differ by day and night">پوستت در روز و شب نیازهای متفاوتی دارد</h2>
+    </header>
+    <div class="routine-switch" role="group" aria-label="انتخاب برنامه" data-en-aria-label="Choose a routine">
+      <button type="button" data-set-theme="day" data-en="Day">روز</button>
+      <button type="button" data-set-theme="night" data-en="Night">شب</button>
+    </div>
+    <div class="routine-body">
+      <div class="routine-photos">
+        <img class="photo-day" src="assets/img/day.webp" alt="مراقبت از پوست در نور صبح" data-en-alt="Skincare in morning light" loading="lazy" width="1920" height="1072">
+        <img class="photo-night" src="assets/img/night.webp" alt="مراقبت از پوست در شب" data-en-alt="Skincare at night" loading="lazy" width="1920" height="1072">
+      </div>
+      <ol class="steps steps-day">
+        <li><b data-en="Gentle cleanser">پاک‌کننده ملایم</b><span data-en="Removes overnight oil without drying.">چربی شبانه را بدون خشک کردن پوست پاک می‌کند.</span></li>
+        <li><b data-en="Antioxidant serum">سرم آنتی‌اکسیدان</b><span data-en="Supports skin during the day.">در طول روز از پوست پشتیبانی می‌کند.</span></li>
+        <li><b data-en="Light moisturizer">آبرسان سبک</b><span data-en="Keeps skin soft and comfortable.">پوست را نرم و راحت نگه می‌دارد.</span></li>
+        <li><b data-en="Sunscreen">ضدآفتاب</b><span data-en="The last and most important morning step.">آخرین و مهم‌ترین مرحله صبح.</span></li>
+      </ol>
+      <ol class="steps steps-night">
+        <li><b data-en="Double cleanse">پاک‌سازی دومرحله‌ای</b><span data-en="Lifts sunscreen and makeup completely.">ضدآفتاب و آرایش را کامل پاک می‌کند.</span></li>
+        <li><b data-en="Soothing toner">تونر آرام‌بخش</b><span data-en="Prepares skin for what comes next.">پوست را برای مراحل بعد آماده می‌کند.</span></li>
+        <li><b data-en="Treatment serum">سرم درمانی</b><span data-en="Chosen by your doctor for your skin.">با نظر پزشک و متناسب با پوستت انتخاب می‌شود.</span></li>
+        <li><b data-en="Repair cream">کرم ترمیم‌کننده</b><span data-en="Supports the skin barrier while you sleep.">هنگام خواب به سد پوستی کمک می‌کند.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-en="Process">مراحل درمان</p>
+      <h2 data-en="Four clear steps">چهار قدم روشن</h2>
+    </header>
+    <ol class="process">
+      <li class="reveal"><h3 data-en="Consultation">مشاوره</h3><p data-en="We hear what you want and what has bothered you.">خواسته‌ها و دغدغه‌هایت را می‌شنویم.</p></li>
+      <li class="reveal"><h3 data-en="Analysis">تحلیل پوست</h3><p data-en="The doctor examines your skin and explains the findings.">پزشک پوستت را معاینه می‌کند و نتیجه را توضیح می‌دهد.</p></li>
+      <li class="reveal"><h3 data-en="Treatment">درمان</h3><p data-en="Sessions follow a plan you've agreed to.">جلسات طبق برنامه‌ای که پذیرفته‌ای انجام می‌شود.</p></li>
+      <li class="reveal"><h3 data-en="Follow-up">پیگیری</h3><p data-en="We check progress and adjust your routine.">پیشرفت را می‌بینیم و برنامه‌ات را تنظیم می‌کنیم.</p></li>
+    </ol>
+  </section>
+
+  <section class="section" id="spaces">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-en="The clinic">فضای کلینیک</p>
+      <h2 data-en="A calm place to take your time">جایی آرام، برای کمی وقت گذاشتن برای خودت</h2>
+    </header>
+    <div class="spaces">
+      <figure class="reveal"><img src="assets/img/clinic-1.webp" alt="سالن انتظار با مبل‌های یاسی" data-en-alt="Reception with lilac sofas" loading="lazy" width="1920" height="1072"><figcaption data-en="Reception">پذیرش و انتظار</figcaption></figure>
+      <figure class="reveal"><img src="assets/img/clinic-2.webp" alt="اتاق درمان روشن و مینیمال" data-en-alt="A bright minimal treatment room" loading="lazy" width="1920" height="1072"><figcaption data-en="Treatment room">اتاق درمان</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <header class="section-head reveal">
+      <p class="eyebrow" data-en="Doctors">پزشکان</p>
+      <h2 data-en="The people behind your care">کسانی که کنارت هستند</h2>
+    </header>
+    <div class="team">
+      <article class="doctor reveal">
+        <img src="assets/img/doctor-2.webp" alt="پرتره دکتر سارا مهدوی" data-en-alt="Portrait of Dr. Sara Mahdavi" loading="lazy" width="1100" height="1473">
+        <div><h3 data-en="Dr. Sara Mahdavi">دکتر سارا مهدوی</h3><p data-en="Dermatologist">متخصص پوست</p></div>
+      </article>
+      <article class="doctor reveal">
+        <img src="assets/img/doctor-1.webp" alt="پرتره دکتر آرش کیانی" data-en-alt="Portrait of Dr. Arash Kiani" loading="lazy" width="1100" height="1473">
+        <div><h3 data-en="Dr. Arash Kiani">دکتر آرش کیانی</h3><p data-en="Laser and skin rejuvenation">لیزر و جوان‌سازی پوست</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section book" id="book">
+    <div class="book-info reveal">
+      <p class="eyebrow" data-en="Book a visit">رزرو نوبت</p>
+      <h2 data-en="Let's start with a conversation">بیا از یک گفت‌وگو شروع کنیم</h2>
+      <dl>
+        <div><dt data-en="Address">آدرس</dt><dd data-en="0 Sample Street, Tehran">تهران، خیابان نمونه، پلاک ۰</dd></div>
+        <div><dt data-en="Phone">تلفن</dt><dd dir="ltr" data-en="021-0000-0000">۰۲۱-۰۰۰۰-۰۰۰۰</dd></div>
+        <div><dt data-en="Hours">ساعت کاری</dt><dd data-en="Saturday to Thursday, 10:00 to 20:00">شنبه تا پنجشنبه، ۱۰ تا ۲۰</dd></div>
+      </dl>
+    </div>
+    <form class="book-form reveal" id="book-form" novalidate>
+      <label><span data-en="Full name">نام و نام خانوادگی</span><input name="name" autocomplete="off" required></label>
+      <label><span data-en="Phone number">شماره تماس</span><input name="phone" inputmode="tel" autocomplete="off" dir="ltr" required></label>
+      <label><span data-en="Service">خدمت</span>
+        <select name="service">
+          <option data-en="Hydrating facial">فیشیال آبرسان</option>
+          <option data-en="Laser rejuvenation">جوان‌سازی با لیزر</option>
+          <option data-en="Skin analysis">تحلیل تخصصی پوست</option>
+          <option data-en="Home care">مراقبت در خانه</option>
+        </select>
+      </label>
+      <button class="btn btn-dark" type="submit" data-en="Book my visit">ثبت نوبت</button>
+      <p class="form-msg" id="form-msg" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="demo-note" data-en="This website is a design portfolio sample and no clinic with these details exists. Names, numbers and details are fictional. Photos and videos were made with AI (and can easily be replaced with your clinic's real photos and videos).">این وب‌سایت یک نمونه‌کار طراحی است و کلینیکی با این مشخصات وجود ندارد. نام‌ها، عددها و مشخصات ساختگی‌اند. عکس‌ها و ویدیوها با هوش مصنوعی ساخته شده‌اند (و به‌راحتی با عکس‌ها و ویدیوهای واقعی کلینیک شما جایگزین می‌شوند).</p>
+  <a href="#top" data-en="Back to top">بازگشت به بالا</a>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scene.js"></script>
+</body>
+</html>
